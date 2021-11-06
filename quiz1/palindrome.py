@@ -4,4 +4,8 @@ def palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    pass  # remove pass statement and implement me
+    result = True
+    value_rev = value[::-1]
+    if value != value_rev:
+        result = False
+    return result
